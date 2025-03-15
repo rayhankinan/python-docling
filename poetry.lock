@@ -2357,6 +2357,7 @@ files = [
 [package.dependencies]
 attrs = ">=22.2.0"
 rpds-py = ">=0.7.0"
+typing-extensions = {version = ">=4.4.0", markers = "python_version < \"3.13\""}
 
 [[package]]
 name = "regex"
@@ -3626,5 +3627,5 @@ files = [
 
 [metadata]
 lock-version = "2.1"
-python-versions = ">=3.13,<4.0"
-content-hash = "393aa0b74f5db9a998a4de3b3e5cce6b87530dec2bab83b1793301ad3cc0c872"
+python-versions = ">=3.12,<4.0"
+content-hash = "f76ff4938922b6b54d43810158b9406f86a09cf3d224ad026ab3887895193fd0"
