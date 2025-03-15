@@ -5,4 +5,4 @@ build:
 	poetry build
 
 run:
-	poetry run python3 ./src/main.py
+	poetry run streamlit run ./src/app.py
