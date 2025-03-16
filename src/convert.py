@@ -5,7 +5,7 @@ from docling_core.types.io import DocumentStream
 from docling.document_converter import DocumentConverter
 
 def convert_pdf_to_dataframe(stream: BytesIO) -> Iterator[pd.DataFrame]:
-    source = DocumentStream(name="document.pdf", stream=stream)
+    source = DocumentStream(name=stream.name, stream=stream)
     doc_converter = DocumentConverter()
     conv_res = doc_converter.convert(source)
 

@@ -15,7 +15,7 @@ def main() -> None:
 
         for i, df in enumerate(convert_pdf_to_dataframe(uploaded_file)):
             try:
-                st.subheader(f"Table {i+1}")
+                st.subheader(f"{uploaded_file.name} - Table {i + 1}")
                 st.dataframe(df)
 
             except Exception as e:
