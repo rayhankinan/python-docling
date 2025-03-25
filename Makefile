@@ -1,8 +1,8 @@
 install:
 	poetry install
 
-build:
-	poetry build
+download-model:
+	poetry run python ./src/download.py
 
 run:
 	poetry run streamlit run ./src/app.py
